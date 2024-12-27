@@ -19,9 +19,9 @@ docker pull ghcr.io/otel-warez/cp:latest
 This image is built from scratch and will not be useful on its own, but you can use it as a layer. Here is an example:
 
 ```
-FROM ghcr.io/otel-warez/cp:latest as cp
+FROM ghcr.io/otel-warez/cp:latest AS cp
 
-FROM scratch as final
+FROM scratch AS final
 COPY --from=cp /cp /usr/bin/cp
 ...
 ```
