@@ -4,4 +4,4 @@ ARG cp
 
 ADD $cp /cp.exe
 
-ENTRYPOINT ["cp.exe"]
+ENTRYPOINT ["/cp.exe"]

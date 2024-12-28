@@ -4,4 +4,4 @@ ARG cp
 
 ADD $cp /cp
 
-ENTRYPOINT ["cp"]
+ENTRYPOINT ["/cp"]
